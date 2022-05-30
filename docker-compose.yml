@@ -1,0 +1,6 @@
+version: '3.1'
+services:
+  restaurant-finder-app:
+    image: jfarrow02/restaurant-finder:0.2
+    ports:
+      - 3000:3000
