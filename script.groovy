@@ -3,6 +3,7 @@ def init() {
 }
 
 def test(){
+    sh 'npm install'
     sh 'npm run test'
 }
 
