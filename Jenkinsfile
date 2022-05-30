@@ -6,7 +6,7 @@ pipeline {
         stage("init") {
             steps {
                 script {
-                    sh 'initializing ...'
+                    echo 'initializing ...'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage("test") {
             steps {
                 script {
-                    sh "testing..."
+                    echo "testing..."
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
         stage("build and push image") {
             steps {
                 script {
-                    sh 'building and pushing image...'
+                    echo 'building and pushing image...'
                 }
             }
         }
