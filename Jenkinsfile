@@ -30,7 +30,9 @@ pipeline {
 
         stage("build and push image") {
             when {
-                env.BRANCH_NAME == 'main'
+                expression {
+                    env.BRANCH_NAME == 'main'
+                }
             }
 
             steps {
