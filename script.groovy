@@ -4,7 +4,7 @@ def init() {
 
 def test(){
     sh 'npm install'
-    sh 'npm run test'
+    sh 'npm run test-ci'
 }
 
 def buildAndPushImage(){
