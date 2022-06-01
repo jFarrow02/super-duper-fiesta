@@ -4,6 +4,7 @@ def test(){
 }
 
 def testFunctional() {
+    sh 'npm install'
     sh 'cypress run'
 }
 
