@@ -2,7 +2,11 @@ def gv
 
 pipeline {
 
-    agent any
+    agent {
+        docker {
+            image 'cypress/base'
+        }
+    }
 
     environment {
         IMAGE_NAME = 'jfarrow02/restaurant-finder'
