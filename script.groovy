@@ -4,6 +4,7 @@ def test(){
 }
 
 def testFunctional() {
+    sh 'docker pull cypress/base'
     sh 'npm run cypress:ci'
 }
 
