@@ -4,7 +4,7 @@ def test(){
 }
 
 def testFunctional() {
-    sh 'cypress run'
+    sh 'npm run cypress:ci'
 }
 
 def buildAndPushImage(){
