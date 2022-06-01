@@ -4,7 +4,9 @@ def test(){
 }
 
 def testFunctional() {
-    sh 'docker pull cypress/base'
+    withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
+        sh 'docker pull cypress/base'
+    }
     sh 'npm run cypress:ci'
 }
 
