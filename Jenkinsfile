@@ -19,11 +19,20 @@ pipeline {
             }
         }
 
-        stage("test") {
+        stage("unit test") {
             steps {
                 script {
-                    echo "testing..."
+                    echo "running unit tests..."
                     gv.test()
+                }
+            }
+        }
+
+        stage("functional test") {
+            steps {
+                script {
+                    echo "running functional tests..."
+                    gv.testFunctional()
                 }
             }
         }

@@ -1,10 +1,10 @@
-def init() {
-
-}
-
 def test(){
     sh 'npm install'
     sh 'npm run test-ci'
+}
+
+def testFunctional() {
+    sh 'cypress run'
 }
 
 def buildAndPushImage(){
