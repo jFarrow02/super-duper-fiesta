@@ -21,8 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test-ci": "CI=true npm test",
-    "cypress:open": "cypress open",
-    "cypress:ci": "cypress run",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "cypress": "^9.7.0"
   }
 }
